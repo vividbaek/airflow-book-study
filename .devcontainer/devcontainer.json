@@ -1,0 +1,19 @@
+{
+  "name": "airflow-book-study",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "4gb"
+  },
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Airflow",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postStartCommand": "docker compose up -d"
+}
