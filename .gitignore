@@ -1,0 +1,24 @@
+# 개인 자료 — 커밋하지 않음
+*.pdf
+
+# 블로그 원고 — 로컬 전용
+posts/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ruff_cache/
+
+# Airflow 로컬 실행 산출물
+airflow_home/
+logs/
+airflow.db
+*.log
+
+# 비밀값
+.env
+.env.*
