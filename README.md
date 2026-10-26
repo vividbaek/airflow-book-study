@@ -9,6 +9,7 @@
 | 장 | 주제 | Airflow 3 예제 | 바뀐 점 |
 | :---: | :--- | :--- | :--- |
 | 1 | Apache Airflow 살펴보기 | [dags/ch01_umbrella.py](dags/ch01_umbrella.py) | `DummyOperator` → `EmptyOperator`, `days_ago` → 고정 날짜, `schedule_interval` → `schedule` |
+| 2 | Airflow DAG의 구조 | [dags/ch02_download_rocket_launches.py](dags/ch02_download_rocket_launches.py) | `days_ago` → 고정 날짜, `schedule_interval` → `schedule`, 오퍼레이터 import → standard 프로바이더, `from airflow import DAG` → `airflow.sdk` |
 
 ## 직접 실행하기
 
