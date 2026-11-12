@@ -10,6 +10,8 @@
 | :---: | :--- | :--- | :--- |
 | 1 | Apache Airflow 살펴보기 | [dags/ch01_umbrella.py](dags/ch01_umbrella.py) | `DummyOperator` → `EmptyOperator`, `days_ago` → 고정 날짜, `schedule_interval` → `schedule` |
 | 2 | Airflow DAG의 구조 | [dags/ch02_download_rocket_launches.py](dags/ch02_download_rocket_launches.py) | `days_ago` → 고정 날짜, `schedule_interval` → `schedule`, 오퍼레이터 import → standard 프로바이더, `from airflow import DAG` → `airflow.sdk` |
+| 3 | Airflow의 스케줄링 | [dags/ch03_daily_events.py](dags/ch03_daily_events.py) | 하루 데이터 구간 명시, 구간 템플릿·날짜별 파티션, catchup 명시·백필, 재실행 시 파일 교체 (별도 API 없는 샘플) |
+| 4 | Airflow 콘텍스트를 사용하여 태스크 템플릿 작업하기 | [dags/ch04_hourly_pageviews.py](dags/ch04_hourly_pageviews.py) | 공개 SDK·standard 프로바이더, 저장 경로는 구간 시작·파일 주소는 구간 끝(위키미디어 파일 이름이 구간 끝 시각), Python 콘텍스트 인자·템플릿 필드 비교 (외부 다운로드 없는 샘플) |
 
 ## 직접 실행하기
 
